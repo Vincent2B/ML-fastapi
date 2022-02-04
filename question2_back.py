@@ -42,7 +42,7 @@ def training(new_player):
 
 
     # instanciation du Classifier avec meilleurs hyperparamètres
-    clf = tree.DecisionTreeClassifier(max_depth= 5, criterion='gini')
+    clf = tree.DecisionTreeClassifier(max_depth= 2, criterion='entropy',random_state=2)
     clf.fit(X, labels)
 
     result = clf.predict(new_player)
