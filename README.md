@@ -1,4 +1,4 @@
-# MP_DATA_test
+# for api purpose
 pip install fastapi
 
 pip install uvicorn
